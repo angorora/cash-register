@@ -1,0 +1,9 @@
+.charges-list{
+    width:220px;
+    background-color: #545E75
+}
+.charge{
+    font-family:Monaco;
+    font-size: 32px;
+    color: rgb(242, 243, 250)
+}

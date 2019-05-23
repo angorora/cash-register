@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="current-charge">
+      <div class="screen">
+          <p class="charge">R{{digit}}</p>
+      </div>
+    <div class="keypad">
+      <key (press)="onPress($event)" class="key1" [num]="1">1</key>
+      <key (press)="onPress($event)" class="key2" [num]="2">2</key>
+      <key (press)="onPress($event)" class="key3" [num]="3">3</key>
+      <key (press)="onPress($event)"  class="key4" [num]="4">4</key>
+      <key (press)="onPress($event)" class="key5" [num]="5">5</key>
+      <key (press)="onPress($event)" class="key6" [num]="6">6</key>
+      <key (press)="onPress($event)" class="key7"[num]="7">7</key>
+      <key (press)="onPress($event)" class="key8"[num]="8">8</key>
+      <key (press)="onPress($event)" class="key9"[num]="9">9</key>
+      <key (press)="onPress($event)" (cancelPress)="cancelPress($event)" class="keyx"[num]="x" [cancel]="true">x</key>
+      <key (press)="onPress($event)" class="key"[num]="0">0</key>
+      <key (press)="onPress($event)" (addPress)="addPress($event)" class="keyy"[num]="y" [add]="true"></key>
+    </div>
+  </div>
+  <div class="charge-list">
+    <charges [charges]="charges">
+       
+    </charges>
+  </div>
+</div>

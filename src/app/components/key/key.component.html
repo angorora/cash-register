@@ -1,0 +1,5 @@
+<div (click)="onPress(num)" class="key">
+  <p class="key-label" *ngIf="!cancel && !add">{{num}}</p>
+  <img src="./assets/close.png" *ngIf="cancel" >
+  <img src="./assets/check.png" *ngIf="add" >
+</div>
